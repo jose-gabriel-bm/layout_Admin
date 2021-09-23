@@ -6,3 +6,10 @@ body{
 
 	color:#fff !important;
 }
+.sidbar{
+
+	background-color: #456;
+	min-width: 250px;
+	max-width: 250px;
+	min-height: calc(100% - 56px);
+}
