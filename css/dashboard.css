@@ -33,7 +33,7 @@ body{
 	.sidebar{
 		margin-left: -250px;
 	}
-	.sidebar.toggle{
+	.sidebar.toggled{
 		margin-left: 0px;
 	}
 }
