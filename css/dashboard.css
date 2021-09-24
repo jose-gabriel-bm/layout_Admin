@@ -6,10 +6,22 @@ body{
 
 	color:#fff !important;
 }
-.sidbar{
+.sidebar{
 
 	background-color: #456;
 	min-width: 250px;
 	max-width: 250px;
-	min-height: calc(100% - 56px);
+	min-height: calc(100vh - 56px);
+	transition: all 0.3s;
+}
+.sidebar ul li a{
+
+	display: block;
+	padding: 0.75rem 1rem;
+	color: #fff;
+	text-decoration: none;
+}
+	.sidebar ul li a:hover, .sidebar ul .active a{
+	color: #fff;
+	background-color: #354358;
 }
