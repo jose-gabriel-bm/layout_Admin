@@ -25,6 +25,10 @@ body{
 	color: #fff;
 	background-color: #354358;
 }
+.sidebar ul ul a{
+	padding-left: 2.5rem;
+	background-color: #1e2835;
+}
 .sidebar.toggle{
 	margin-left: 0px;
 }
@@ -36,4 +40,26 @@ body{
 	.sidebar.toggled{
 		margin-left: 0px;
 	}
+}
+.sidebar [data-toggle="collapse"]{
+	position: relative;
+}
+.sidebar [data-toggle="collapse"]:before{
+	content: "\f0d7";
+	font-family: "Font Awesome 5 free";
+	font-weight: 900;
+	position: absolute;
+	right: 1rem;
+}
+.sidebar [aria-expanded="true"]{
+	background-color: #19222d;
+}
+.sidebar [aria-expanded="true"]:before{
+	content: "\f0d8";
+}
+.content{
+	width: 100%;
+}
+.titulo{
+	font-size: 2.0rem !important;
 }
