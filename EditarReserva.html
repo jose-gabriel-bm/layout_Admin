@@ -48,8 +48,8 @@
             <ul class="list-unstyled collapse" id="submenu1">
                   <li><a href="ListaUsuarios.html"><i class="fas fa-user-friends"></i> Lista de Usuarios</a></li>
                   <li><a href="CadastrarUsuario.html"><i class="fas fa-user-plus"></i> Adicionar Usuario</a></li>
-                  <li><a href="CadastrarFuncao.html"><i class="fas fa-id-badge"></i>  Nova Função</a></li>
-                  <li><a href="ListaFuncoes.html"><i class="fas fa-id-card"></i> Lista de Funções</a></li>
+                  <li><a href="CadastrarFuncao.html"><i class="fas fa-id-badge"></i>  Nova Funçao</a></li>
+                  <li><a href="ListaFuncoes.html"><i class="fas fa-id-card"></i> Lista de Funçoes</a></li>
             </ul>
          </li>
 
@@ -92,69 +92,61 @@
         <div class="list-group-item">
           <div class="d-flex">
             <div class="mr-auto p-2">
-              <h2 class="display-4 titulo">Lista de Funções</h2>
+              <h2 class="display-4 titulo">Cadastrar Reserva</h2>
             </div>
-            <a href="CadastrarFuncao.html">
-              <div class="p-2">
-                
-                <button class="btn btn-outline-success btn-sm">Adicionar nova Função</button>
-              </div>
-
-            </a>
-
-          </div>
-            
-          <div class="alert alert-success" role="alert">
-            Usuario apagado com sucesso!
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="table-responsive">
-          <table class="table table-hover table-striped table-bordered">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Função</th>
-                <th>Criado em:</th>
-                <th>Modificado em:</th>
-                <th class="text-center">Ações</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td class="text-center">
-                  <a href="visualizar.html" class="btn btn-outline-primary btn-sm">Visualizar</a>
-                  <a href="EditarFuncao.html" class="btn btn-outline-warning btn-sm">Editar</a>
-                  <a href="deletar.html" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#apagarRegistro">Deletar</a>
-                
-                </td>
-              </tr>
+            <div class="p-2">
+              <td class="text-center">
+                <a href="ListaReservas.html" class="btn btn-outline-info btn-sm">Lista de Reservas</a>
+                <a href="visualizar.html" class="btn btn-outline-primary btn-sm">Visualizar</a>
+                <a href="deletar.html" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#apagarRegistro">Deletar</a>
               
-            </tbody>
-          </table>
-          <nav aria-label="paginacao">
-            <ul class="pagination pagination-sm justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Primeira</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Ultima</a>
-              </li>
-            </ul>
-          </nav>
+              </td>
+            </div>
+
+          </div><hr>  
+          
+         <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><span class="text-danger">*</span> Filme </label>
+              <input name=filme type="filmes" class="form-control" id="filme">
+            </div>
+            <div class="col-md-6">
+              <label><span class="text-danger">*</span>Cliente</label>
+              <input name=clientes type="clientes" class="form-control" id="clientes">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label><span class="text-danger">*</span>Data Locação </label>
+              <input name=dataLocacao type="datetime" class="form-control" id="dataLocacao">
+            </div>
+            <div class="col-md-4">
+              <label><span class="text-danger">*</span>Data Devolução</label>
+              <input name=dataDevolucao type="datetime" class="form-control" id="dataDevolucao">
+            </div>
+            <div class="col-md-4">
+              <label><span class="text-danger">*</span>Valor da Reserva</label>
+              <input name="valorReserva" type="decimal" class="form-control" id="valorReserva">
+            </div>
         </div>
+
+        <div class="form-row">
+           <div class="form-group col-md-4">
+              <label for="inputState" class="form-label"><span class="text-danger">*</span>Filme Devolvido ?</label>
+              <select name="devolvido" id="devolvido" class="form-select">
+                <option selected>Selecionar Status</option>
+                <option>Sim</option>
+                <option>Nao</option>
+              </select>
+            </div>
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning">Salvar</button>
+            </div>
+          </form>
+
+         </div>
         </div>
       </div>
     </div>
